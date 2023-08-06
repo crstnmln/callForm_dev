@@ -1,0 +1,71 @@
+ @charset "utf-8";
+ /* @import url('./reseter.css'); */
+ @import url("./fonts.css");
+
+
+ /*  CSS HEX 
+#08D9D6 teal
+#252A34 negro
+#FF2E63 rojo
+#EAEAEA gris
+ */
+
+* {
+   font-family: Roboto-Regular;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   outline: none;
+   color: #2f3841;
+ }
+
+html {
+   scroll-behavior: smooth;
+ }
+
+body {
+   width: 75%;
+   margin: auto;
+   margin-bottom: 2em;
+   /* display: flex; */
+   /* align-items: center; */
+ }
+
+/*  
+#formular input,
+#formular option,
+#network,
+#network option,
+#formOption
+ {
+   text-decoration: none;
+   color: #eaeaea;
+   background-color: #2f3841;
+   padding: 4px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   margin-bottom: 10px; 
+ } */
+ 
+#formular input,
+#network,
+#formOption select,
+#formOption select option,
+#network option
+ {
+   text-decoration: none;
+   color: #eaeaea;
+   background-color: #2f3841;
+   padding: 4px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   margin-bottom: 10px; 
+ }
+ 
+/*  #network option{
+	font-family: Roboto-Regular;
+	color: white;
+ }
+ */
