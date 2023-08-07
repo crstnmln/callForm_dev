@@ -135,8 +135,8 @@ const copiarDatos = (parrafo) => {
 	//let copyText = `${provName} from ${fName} \n ${phNmbr}\n NPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\n Tx: ${tx}\n Network: ${myForm.elements[4].value}\n As per AWC:\n As per TOB:`;
 	fName = lowerIt(fName);
 
-	
-	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[4].value}\n\nAs per AWC:\n\nAs per TOB:\n\nCMolina`;
+
+	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[4].value}\n\nAs per AWC:\n\nAs per TOB:\n\n`;
 
 	navigator.clipboard.writeText(copyText);
 }
