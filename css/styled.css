@@ -22,17 +22,18 @@
  }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #2f3841;
-  background: #eaeaea;
+  color: #eaeaea;
+  background: #2f3841;
 }
 
 ::selection {
-  color: #2f3841;
-  background: #eaeaea;
+  color: #eaeaea;
+  background: #2f3841;
 }
 
 html {
    scroll-behavior: smooth;
+   
  }
 
 body {
@@ -93,6 +94,12 @@ background-size: cover;
 	align-items: flex-start;
     flex-direction: column;
   }
+.boxItem p
+{
+	margin-bottom: 5px;
+	font-size: 1.1rem;
+}
+
 
  
 /*  #network option{
