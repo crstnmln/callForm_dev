@@ -25,7 +25,7 @@ submitBtn.addEventListener("click", (e) => {
 
 	imprimer.forEach((dato) => {
 
-		let { fax, dob, dos, dx, fName, npiF, npiD, taxF, taxD, pName, pNumber, phNmbr, provName, tx, city } = dato;
+		let { fax, dob, dos, dx, fName, npiF, npiD, taxF, taxD, pName, pNumber, phNmbr, provName, tx, city, signature } = dato;
 
 		fName = lowerIt(fName);
 		let delPrint = document.getElementById(`eliminame`);
@@ -48,6 +48,7 @@ submitBtn.addEventListener("click", (e) => {
 						<li>Network: ${myForm.elements[4].value}</li>
 						<li>As per AWC:</li>
 						<li>As per TOB:</li>
+						<li>${signature}</li>
 					</ul>
 				</section>
 				<br />
@@ -89,6 +90,7 @@ submitBtn.addEventListener("click", (e) => {
 						<li>Network: ${myForm.elements[4].value}</li>
 						<li>As per AWC:</li>
 						<li>As per TOB:</li>
+						<li>${signature}</li>
 					</ul>
 				</section>
 				<br />
@@ -130,13 +132,13 @@ if (eleccion.elements[0].selectedIndex === 0){
 } */
 
 const copiarDatos = (parrafo) => {
-	let { fax, dob, dos, dx, fName, npiF, npiD, taxF, taxD, pName, pNumber, phNmbr, provName, tx, city } = parrafo;
+	let { fax, dob, dos, dx, fName, npiF, npiD, taxF, taxD, pName, pNumber, phNmbr, provName, tx, city, signature } = parrafo;
 
 	//let copyText = `${provName} from ${fName} \n ${phNmbr}\n NPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\n Tx: ${tx}\n Network: ${myForm.elements[4].value}\n As per AWC:\n As per TOB:`;
 	fName = lowerIt(fName);
 
-
-	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[4].value}\n\nAs per AWC:\n\nAs per TOB:\n\n`;
+	
+	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[4].value}\n\nAs per AWC:\n\nAs per TOB:\n\n ${signature}`;
 
 	navigator.clipboard.writeText(copyText);
 }
