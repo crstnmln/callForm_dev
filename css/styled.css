@@ -1,0 +1,102 @@
+ @charset "utf-8";
+ /* @import url('./reseter.css'); */
+ @import url("./fonts.css");
+
+
+ /*  CSS HEX 
+#08D9D6 teal
+#252A34 negro
+#FF2E63 rojo
+#EAEAEA gris
+ */
+
+* {
+   font-family: Roboto-Regular;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+   outline: none;
+   color: #2f3841;
+ }
+
+::-moz-selection { /* Code for Firefox */
+  color: #2f3841;
+  background: #eaeaea;
+}
+
+::selection {
+  color: #2f3841;
+  background: #eaeaea;
+}
+
+html {
+   scroll-behavior: smooth;
+ }
+
+body {
+   width: 75%;
+   margin: auto;
+   margin-bottom: 2em;
+   /* display: flex; */
+   /* align-items: center; */
+  background-color: #000000;
+background-image: url(../assets/bkg2.svg);
+/* background-attachment: fixed; */
+background-size: cover;
+ }
+
+/*  
+#formular input,
+#formular option,
+#network,
+#network option,
+#formOption
+ {
+   text-decoration: none;
+   color: #eaeaea;
+   background-color: #2f3841;
+   padding: 4px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   margin-bottom: 10px; 
+ } */
+ 
+#formular input,
+#network,
+#formOption select,
+#formOption select option,
+#network option
+ {
+   text-decoration: none;
+   color: #eaeaea;
+   background-color: #2f3841;
+   padding: 4px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   margin-bottom: 10px; 
+ }
+ 
+ #formular input:hover,
+ #formular select:hover,
+ #formOption input:hover,
+ #formOption select:hover {
+   color: #2f3841;
+   background-color: #eaeaea;
+ }
+ 
+ #formOption, 
+  #formular{
+	display: flex;
+    justify-content: center;
+	align-items: flex-start;
+    flex-direction: column;
+  }
+
+ 
+/*  #network option{
+	font-family: Roboto-Regular;
+	color: white;
+ }
+ */
