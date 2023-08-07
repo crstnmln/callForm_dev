@@ -45,7 +45,7 @@ submitBtn.addEventListener("click", (e) => {
 						<li>DOS: ${dos}</li>
 						<li>Dx: ${dx}</li>
 						<li>Tx: ${tx}</li>
-						<li>Network: ${myForm.elements[4].value}</li>
+						<li>Network: ${myForm.elements[5].value}</li>
 						<li>As per AWC:</li>
 						<li>As per TOB:</li>
 						<li>${signature}</li>
@@ -87,7 +87,7 @@ submitBtn.addEventListener("click", (e) => {
 						<li>DOS: ${dos}</li>
 						<li>Dx: ${dx}</li>
 						<li>Tx: ${tx}</li>
-						<li>Network: ${myForm.elements[4].value}</li>
+						<li>Network: ${myForm.elements[5].value}</li>
 						<li>As per AWC:</li>
 						<li>As per TOB:</li>
 						<li>${signature}</li>
@@ -134,11 +134,11 @@ if (eleccion.elements[0].selectedIndex === 0){
 const copiarDatos = (parrafo) => {
 	let { fax, dob, dos, dx, fName, npiF, npiD, taxF, taxD, pName, pNumber, phNmbr, provName, tx, city, signature } = parrafo;
 
-	//let copyText = `${provName} from ${fName} \n ${phNmbr}\n NPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\n Tx: ${tx}\n Network: ${myForm.elements[4].value}\n As per AWC:\n As per TOB:`;
+	//let copyText = `${provName} from ${fName} \n ${phNmbr}\n NPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\n Tx: ${tx}\n Network: ${myForm.elements[5].value}\n As per AWC:\n As per TOB:`;
 	fName = lowerIt(fName);
 
 	
-	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[4].value}\n\nAs per AWC:\n\nAs per TOB:\n\n ${signature}`;
+	let copyText = `${provName} from ${fName}\nPh:${phNmbr}\nNPI: ${npiF}\nDOS: ${dos}\nDx: ${dx}\nTx: ${tx}\nNT: ${myForm.elements[5].value}\n\nAs per AWC:\n\nAs per TOB:\n\n ${signature}`;
 
 	navigator.clipboard.writeText(copyText);
 }
