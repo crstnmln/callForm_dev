@@ -1,93 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Useful tool xd</title>
-        <link rel="shortcut icon" href="" type="image/x-icon" />
-        <meta name="description" content="Herramienta para obtener y llenar datos de manera rapida y optima." />
-        <meta name="keywords" content="The useful form" />
-        <!-- <link rel="stylesheet" href="./css/reseter.css"/> -->
-		<link rel="stylesheet" href="./css/styled.css"/>
-        
-    </head>
-    <body>
-        <h2>Call Form</h2>
 
-        <form id="formOption" action="">
-            <select name="selection" id="selection">
-                <option value="Benefits">Eligibility &amp; Benefits</option>
-                <option value="Case Management">Case Management</option>
-            </select>
-        </form>
-        
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Useful tool xd</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta name="description" content="Herramienta para obtener y llenar datos de manera rapida y optima." />
+    <meta name="keywords" content="The useful form" />
+    <!-- <link rel="stylesheet" href="./css/reseter.css"/> -->
+    <link rel="stylesheet" href="./css/styled.css" />
 
-        <form id="formular" action="">
-            <!-- Esto debe estar oculto justo antes de que se se envie la opcion de forma seleccionada -->
+</head>
 
-            <label for="provName">Callers's name:</label>
-            <input type="text" id="provName" name="provName" />
+<body>
+    <h2>Call Form</h2>
 
-            <label for="fName">Facility:</label>
-            <input type="text" id="fName" name="fName" />
-			
-			<label for="npiF">NPI Facility:</label>
-            <input type="text" id="npiF" name="npiF" />
+    <form id="formOption" action="">
+        <select name="selection" id="selection">
+            <option value="Benefits">Eligibility &amp; Benefits</option>
+            <option value="Case Management">Case Management</option>
+        </select>
+    </form>
 
-            <label for="phNmbr">Phone Number:</label>
-            <input type="text" id="phNmbr" name="phNmbr" />
 
-            <select name="" id="network">
-                <option value="Aetna">AETNA</option>
-                <option value="Out Of Network">Out of Network</option>
-            </select>
-            
+    <form id="formular" action="">
+        <!-- Esto debe estar oculto justo antes de que se se envie la opcion de forma seleccionada -->
 
-            <label for="dos">Date of service:</label>
-            <input type="date" id="dos" name="dos" />
-            
-			<label for="pNumber">Policy Number:</label>
-            <input type="text" id="pNumber" name="pNumber" />
+        <label for="provName">Callers's name:</label>
+        <input type="text" id="provName" name="provName" />
 
-            <label for="pName">Patient's Name:</label>
-            <input type="text" id="pName" name="pName" />
+        <label for="fName">Facility:</label>
+        <input type="text" id="fName" name="fName" />
 
-            <label for="dob">Date of birth:</label>
-            <input type="date" id="dob" name="dob" />
+        <label for="npiF">NPI Facility:</label>
+        <input type="text" id="npiF" name="npiF" />
 
-            <label for="fax">Fax:</label>
-            <input type="text" id="fax" name="fax" />
-            <!-- hidden and dissabled aswell -->
+        <label for="phNmbr">Phone Number:</label>
+        <input type="text" id="phNmbr" name="phNmbr" />
 
-            <label for="dx">Dx:</label>
-            <input type="text" id="dx" name="dx" />
+        <select name="" id="network">
+            <option value="Aetna">AETNA</option>
+            <option value="Out Of Network">Out of Network</option>
+        </select>
 
-            <label for="tx">Tx:</label>
-            <input type="text" id="tx" name="tx" />
 
-            <label for="city">State & City:</label>
-            <input type="text" id="City" name="city" />
+        <label for="dos">Date of service:</label>
+        <input type="date" id="dos" name="dos" />
 
-            <label for="npiD">NPI Doctor:</label>
-            <input type="text" id="npiD" name="npiD" />
+        <label for="pNumber">Policy Number:</label>
+        <input type="text" id="pNumber" name="pNumber" />
 
-            <label for="taxF">Tax ID facility:</label>
-            <input type="text" id="taxF" name="taxF" />
+        <label for="pName">Patient's Name:</label>
+        <input type="text" id="pName" name="pName" />
 
-            <label for="taxD">Tax ID Doctor:</label>
-            <input type="text" id="taxD" name="taxD" />
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" name="dob" />
 
-            <input type="submit" value="Submit" id="submitbtn" />
-        </form>
+        <label for="fax">Fax:</label>
+        <input type="text" id="fax" name="fax" />
+        <!-- hidden and dissabled aswell -->
 
-        <section class="box" id="box"></section>
+        <label for="dx">Dx:</label>
+        <input type="text" id="dx" name="dx" />
 
-        <!--  <form id="myForm">
+        <label for="tx">Tx:</label>
+        <input type="text" id="tx" name="tx" />
+
+        <label for="city">State & City:</label>
+        <input type="text" id="City" name="city" />
+
+        <label for="npiD">NPI Doctor:</label>
+        <input type="text" id="npiD" name="npiD" />
+
+        <label for="taxF">Tax ID facility:</label>
+        <input type="text" id="taxF" name="taxF" />
+
+        <label for="taxD">Tax ID Doctor:</label>
+        <input type="text" id="taxD" name="taxD" />
+
+        <input type="submit" value="Submit" id="submitbtn" />
+    </form>
+
+    <section class="box" id="box"></section>
+
+    <!--  <form id="myForm">
             <input type="text" name="firstName" />
             <input type="text" name="lastName" />
         </form> -->
 
-        <script src="./js/index.js"></script>
-    </body>
+    <script src="./js/index.js"></script>
+</body>
+
 </html>
