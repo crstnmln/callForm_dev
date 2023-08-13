@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
