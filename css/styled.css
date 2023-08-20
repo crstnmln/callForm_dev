@@ -23,13 +23,14 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: #eaeaea;
-  background: #2f3841;
+  /* color: #eaeaea; */
+  /* background: #2f3841; */
+  background-color:rgba(0,0,255,0.3);
 }
 
 ::selection {
-  color: #eaeaea;
-  background: #2f3841;
+  /* color: #eaeaea; */
+  background-color:rgba(0,0,255,0.3);
 }
 
 html {
