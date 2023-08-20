@@ -182,7 +182,7 @@ submitBtn.addEventListener("click", (e) => {
 				<p>
 				<p>For Comunications:</p>
 				<ul id="copiame">
-					<li>member ${provName}</li>
+					<li>Member ${provName}</li>
 					<li>Ph: ${phNmbr}</li>
 					<li>Amount charged: ${amount}</li>
 					<li>DOS: ${dos}</li>
@@ -200,7 +200,7 @@ submitBtn.addEventListener("click", (e) => {
 				<p>
 				<p>For Comunications:</p>
 				<ul id="copiame">
-					<li>member ${provName}</li>
+					<li>Member ${provName}</li>
 					<li>Ph: ${phNmbr}</li>
 					<li>Amount charged: ${amount}</li>
 					<li>DOS: ${dos}</li>
